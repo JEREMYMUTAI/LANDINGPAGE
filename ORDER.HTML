@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <a class="active" href="ORDER.HTML">ORDER</a>
+    <h1 style="background-color:DodgerBlue;">Place an Order</h1>
+    <form action="/place-order" method="post">
+      <label for="flavor">Flavor:</label>
+      <select name="flavor" id="flavor">
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+      </select>
+      <br>
+      <label for="toppings">Toppings:</label>
+      <input type="checkbox" name="toppings[]" value="sprinkles"> Sprinkles
+      <input type="checkbox" name="toppings[]" value="chocolate chips"> Chocolate Chips
+      <input type="checkbox" name="toppings[]" value="whipped cream"> Whipped Cream
+      <br>
+      <label for="size">Size:</label>
+      <input type="radio" name="size" value="small"> Small
+      <input type="radio" name="size" value="medium"> Medium
+      <input type="radio" name="size" value="large"> Large
+      <br>
+      <label for="quantity">Quantity:</label>
+      <input type="number" name="quantity" value="1" min="1">
+      <br>
+      <input type="submit" value="Place Order">
+    </form>
+      <form>
+          <label for="flavor">Flavor:</label>
+          <input type="text" id="flavor"><br><br>
+          <label for="price">Price:</label>
+          <input type="text" id="price"><br><br>
+          <button type="button" onclick="addIceCream()">Add</button>
+      </form>
+      <h2>Ice Cream List</h2>
+      <ul id="ice-cream-list">
+      </ul>
+      <script>
+          // Define a global ice cream array
+          let iceCreams = [];
+  
+          // Define a function to add a new ice cream to the list
+          function addIceCream() {
+              // Get the flavor and price values from the form
+              let flavor = document.getElementById('flavor').value;
+              let price = document.getElementById('price').value;
+  
+              // Add the new ice cream to the array
+              iceCreams.push({ flavor: flavor, price: price });
+  
+              // Clear the form inputs
+              document.getElementById('flavor').value = '';
+              document.getElementById('price').value = '';
+  
+              // Update the ice cream list
+              updateIceCreamList();
+          }
+  
+          // Define a function to update the ice cream list
+          function updateIceCreamList() {
+              // Get the ice cream list element
+              let iceCreamList = document.getElementById('ice-cream-list');
+  
+              // Clear the current list items
+              iceCreamList.innerHTML = '';
+  
+              // Loop through the ice creams and add them to the list
+              for (let i = 0; i < iceCreams.length; i++) {
+                  let iceCream = iceCreams[i];
+                  let li = document.createElement('li');
+                  li.innerHTML = iceCream.flavor + ' - ' + iceCream.price;
+                  iceCreamList.appendChild(li);
+              }
+          }
+      </script>
+  
+
+  <a href="#">Home</a> 
+</body>
+</html>

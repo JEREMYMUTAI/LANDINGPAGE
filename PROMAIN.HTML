@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head>
+		<meta charset="UTF-8">
+		S
+		<title>Project Ice</title>
+		<head>
+			<link rel="stylesheet" href="/path/to/fontawesome/css/all.css">
+			<script src="/path/to/fontawesome/js/all.js"></script>
+		  </head>
+		  
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-vrFsdjT9cZuG1Z72zjLpUck+zNzndyN/6yMz31GXxj6plbUuq/GsE/L7So0wNR50bL7VpGcJ0M7ROrF0rT9Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<!-- Font Awesome JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-e+Pxz1WpG8/9M9m+sFzwtIKRm4l4Sk4f4D+bq+1NFt2FhS28PmlyX9+xlZWWxr0odR4wM88B4Dh3qy+2ey2QcA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		
+	  </head>
+	  
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+	
+</head>
+
+<marquee behavior="scroll" direction="left">Welcome to our Ice Cream Management System!</marquee>
+
+<body>
+	<form action="login.php" method="post">
+	<label for="username">Username:</label>
+	<input type="text" id="username" name="username"><br><br>
+	<label for="password">Password:</label>
+	<input type="password" id="password" name="password"><br><br>
+	<input type="submit" value="Sign In">
+  </form>
+  <br>
+  <form action="logout.php" method="post">
+	<input type="submit" value="Sign Out">
+  </form>
+
+	<form action="/search.php" method="GET">
+		<input type="text" name="search" placeholder="Search products...">
+		<button type="submit">Search</button>
+	  </form>
+	  
+	  <div id="search-results"></div>
+	<style>
+		
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #ece4e4;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #f5f4f4;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 10;
+		}
+		nav {
+			background-color: #202020;
+			border-bottom: 1px solid #ccc;
+			overflow: hidden;
+			padding: 10px;
+		}
+		nav a {
+			color: #333;
+			text-decoration: none;
+			padding: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			transition: background-color 0.3s ease-in-out;
+		}
+		nav a:hover {
+			background-color: #ccc;
+			color: #fff;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		section {
+			background-color: #f1e6e6;
+			padding: 20px;
+			margin-bottom: 20px;
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		}
+		section h2 {
+			margin-top: 0;
+		}
+		footer {
+			background-color: #333;
+			color: #7d9fa3;
+			padding: 10px;
+			text-align: left;
+		}
+	</style>
+</head>
+<body>
+	<header> 
+	<style>
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		table {
+			border-collapse: collapse;
+			margin: auto;
+		}
+		th, td {
+			padding: 10px;
+			border: 1px solid #ddd;
+		}
+		th {
+			background-color: #c0b12c;
+			color: white;
+		}
+		#marquee {
+			height: 30px;
+			background-color: #ffffcc;
+			overflow: hidden;
+			text-align: center;
+			font-weight: bold;
+		}
+		#marquee p {
+			display: inline-block;
+			padding-right: 100%;
+			animation: marquee 15s linear infinite;
+		}
+		@keyframes marquee {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(-100%); }
+		}
+	</style>
+</head>
+<body>
+	<h1>Ice Cream Management System</h1>
+	<div id="marquee">
+		<p>Welcome to our ice cream shop! We have a wide selection of flavors and toppings.</p>
+	</div>
+	<a class="active" href="MARQUEE.HTML">MARQUEE</a>
+		
+	</header>
+	<nav>
+		<div class="container"></div>
+		<a class="active" href="#">Home</a>
+		<a class="active" href="PRODUCTS.HTML">Products</a>
+	    <a href="#flavors">Flavors</a>
+		<a href="#toppings">Toppings</a>
+	    <a href="#prices">Prices</a>
+		<a class="active" href="ORDER.HTML">Orders</a>
+		<a href="#">Customers</a>	
+		<a href="#">Reports</a>>
+
+        </nav>
+
+		<section>
+			<marquee>
+
+			<h2>Get your favorite ice cream flavors here!</h2> 
+
+		</marquee>
+			<p>We offer a variety of delicious ice cream flavors and toppings to choose from. Browse our selection and place an order today!</p>
+		</section>
+		<table>
+			<thead>
+				<tr>
+					<th>Flavor</th>
+					<th>Toppings</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+	
+				<tr>
+					<td>Vanilla</td>
+					<td>Sprinkles, chocolate chips, caramel sauce</td>
+					<td>$2.50</td>
+				</tr>
+				<tr>
+					<td>Chocolate</td>
+					<td>Whipped cream, nuts, hot fudge</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Strawberry</td>
+					<td>Fresh berries, graham cracker crumbs</td>
+					<td>$3.50</td>
+				</tr>
+				<tr>
+					<td>Mint chocolate chip</td>
+					<td>Oreo crumbs, mint syrup</td>
+					<td>$4.00</td>
+				</tr>
+	
+		</table>
+		<section>
+			<label for="menu">Select an option:</label>
+		<body>
+			<script>
+				function orderReceived() {
+					alert("Your order has been received. Thank you for choosing our ice cream!");
+				}
+			</script>
+		</head>
+		<body>
+			<h1>Welcome to our Ice Cream Management System</h1>
+			<p>To place an order, please select your favorite flavors:</p>
+			<form>
+				<input type="checkbox" name="flavors" value="vanilla"> Vanilla<br>
+				<input type="checkbox" name="flavors" value="chocolate"> Chocolate<br>
+				<input type="checkbox" name="flavors" value="strawberry"> Strawberry<br>
+				<input type="checkbox" name="flavors" value="mint"> Mint<br>
+				<input type="checkbox" name="flavors" value="cookie-dough"> Cookie Dough<br>
+				<br>
+				<button type="button" onclick="orderReceived()">Place Order</button>
+			</form>
+			<link rel="stylesheet" href="styles.css">
+			<a class="active" href="ORDER.HTML">ORDER</a>
+			<h1 style="background-color:DodgerBlue;">Place an Order</h1>
+		  <form action="/place-order" method="post">
+			<label for="flavor">Flavor:</label>
+			<select name="flavor" id="flavor">
+			  <option value="vanilla">Vanilla</option>
+			  <option value="chocolate">Chocolate</option>
+			  <option value="strawberry">Strawberry</option>
+			</select>
+			<br>
+			<label for="toppings">Toppings:</label>
+			<input type="checkbox" name="toppings[]" value="sprinkles"> Sprinkles
+			<input type="checkbox" name="toppings[]" value="chocolate chips"> Chocolate Chips
+			<input type="checkbox" name="toppings[]" value="whipped cream"> Whipped Cream
+			<br>
+			<label for="size">Size:</label>
+			<input type="radio" name="size" value="small"> Small
+			<input type="radio" name="size" value="medium"> Medium
+			<input type="radio" name="size" value="large"> Large
+			<br>
+			<label for="quantity">Quantity:</label>
+			<input type="number" name="quantity" value="1" min="1">
+			<br>
+			<button type="button" onclick="orderReceived()">Place Order</button>
+		  </form>
+			<form>
+				<label for="flavor">Flavor:</label>
+				<input type="text" id="flavor"><br><br>
+				<label for="price">Price:</label>
+				<input type="text" id="price"><br><br>
+				<button type="button" onclick="addIceCream()">Add</button>
+			</form>
+			<h2>Ice Cream List</h2>
+			<ul id="ice-cream-list">
+			</ul>
+			<script>
+				// Define a global ice cream array
+				let iceCreams = [];
+		
+				// Define a function to add a new ice cream to the list
+				function addIceCream() {
+					// Get the flavor and price values from the form
+					let flavor = document.getElementById('flavor').value;
+					let price = document.getElementById('price').value;
+		
+					// Add the new ice cream to the array
+					iceCreams.push({ flavor: flavor, price: price });
+		
+					// Clear the form inputs
+					document.getElementById('flavor').value = '';
+					document.getElementById('price').value = '';
+		
+					// Update the ice cream list
+					updateIceCreamList();
+				}
+		
+				// Define a function to update the ice cream list
+				function updateIceCreamList() {
+					// Get the ice cream list element
+					let iceCreamList = document.getElementById('ice-cream-list');
+		
+					// Clear the current list items
+					iceCreamList.innerHTML = '';
+		
+					// Loop through the ice creams and add them to the list
+					for (let i = 0; i < iceCreams.length; i++) {
+						let iceCream = iceCreams[i];
+						let li = document.createElement('li');
+						li.innerHTML = iceCream.flavor + ' - ' + iceCream.price;
+						iceCreamList.appendChild(li);
+					}
+				}
+			</script>
+		</body>
+
+			<style>
+				 
+				/* CSS styling */
+				body {
+					background-color: #f0d5e7;
+				  font-family: Arial, Times New Roman;/* Set font type to Arial */
+				  font-size: 35px; /* Set font size to 20 pixels */
+				}
+			  </style> <p><label>Username.</label><input type="text" name="name" required></p>
+			<p><label>Password.</label><input type="password" name="password"></p>
+			  <p><input type="date" name="date"></p>
+			<select id="menu" name="menu">
+			  <option value="shop_admin">Shop Admin</option>
+			 
+			  <option value="manage_inventory">Manage Inventory</option>
+			  <optgroup label="Reports">
+				<option value="sales">Sales</option>
+				<option value="profits">Profits</option>
+				<option value="losses">Losses</option>
+			  </optgroup>
+			</select>
+	<style>
+		/* CSS styling */
+		body {
+			background-color: #27ccc4;
+		  font-family: Arial, Times New Roman;/* Set font type to Arial */
+		  font-size: 25px; /* Set font size to 20 pixels */
+		}
+	  </style> 
+	<form method="post">
+		<top><img src="img/nepolitan.jpg" height="100px" alt="JerryNesS"></t>
+		<img src="img/ice.jpg" height="30px" alt="JerryNesS">
+		<h10>Welcome to Ice.</h10>
+		<center><img src="img/chocolate.jpg" height="500px" alt="JerryNesS">
+		
+		
+			<fieldset>
+				<legend>ICE_CREAM</legend>
+			<center><img src="img/pbs.jpg" height="200px" alt="JerryNesS"></center>
+			
+			<h1>Ice Cream Management System</h1>
+			<p>Changes.</p>
+			<p><textarea rows="10" cols="20"></textarea></p>
+			
+<div id="page" class="container-fluid">
+	<div id="page-content">
+		<div id="region-main-box">
+			<section id="region-main">
+
+				<span class="notifications" id="user-notifications"></span>
+				<div role="main"><span id="maincontent"></span><div class="box py-3 generalbox"><div role="alertdialog" aria-labelledby="modal-header" aria-describedby="modal-body" aria-modal="true" id="notice" class="box py-3 generalbox modal modal-dialog modal-in-page show"><div id="modal-content" class="box py-3 modal-content"><div id="modal-header" class="box py-3 modal-header px-3"><h4>Confirm</h4></div><div role="alert" data-aria-autofocus="true" id="modal-body" class="box py-3 modal-body"><p>You are already logged in as Mutai Kamau, you need to log out before logging in as different shop_admin.</p></div><div id="modal-footer" class="box py-3 modal-footer"><div class="buttons"><div class="singlebutton">
+<form method="get" action="https://ice-cream.magement.ac.ke/" >
+	<button type="submit" class="btn btn-secondary"
+		id="single_button641807126d6e42"
+		
+		
+		>Cancel</button>
+</form>
+</div><div class="singlebutton">
+<form method="post" action="https://ice-cream.management.ac.ke/login/logout.php" >
+		<input type="hidden" name="sesskey" value="cpdNBD2EMU">
+		<input type="hidden" name="loginpage" value="1">
+	<button type="submit" class="btn btn-primary"
+		id="single_button641807126d6e43"
+		
+		
+		>Log out</button>
+</form>
+</div></div></div></div></div></div></div>
+				
+		
+			</section>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="tool_dataprivacy"><a href="https://ice-cream.management.ac.ke/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://download.moodle.org/mobile?version=2022112801.02&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the ice-cream.management mobile app</a>
+
+		</fieldset>
+	</form>
+<div id="footer">
+	Copyright &#169; 2023 jerrynesske MUTAI KAMAU<br />
+	<a href="#">Home</a> 
+	<div class="footer-legal-links">
+		<a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+		<a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+		<a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+		<a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+		<div id="teconsent"></div>
+	</div>
+</div>
+
+</div>
+	<a href="http://www.google.com/search?q=lemon+meringue+pie+recipe&start=10">Search for other ICE-CREAME recipes</a> | 
+	<a href="#">ICE_CREAM</a><br />
+	<img src="img/nepolitan.jpg" height="400px" alt="JerryNesS"></center>   	  	    	  	      	     	       	         
+</div> <!-- end footer div -->
+
+<footer id="pageinfo"> <!--Footer containing copyright and link information-->
+	<address>Written by KAMAU JEREMY.</address> <!--Copyright notice-->
+	
+	<p><a href="jkamau@students.ku.ac.ke" >jkamau@students.ku.ac.ke</a></p> <!--Author's email-->
+	<p><a href="jeremiahkamau@zetech.ac.ke">"jeremiahkamau@zetech.ac.ke"
+	</a></p> <!--Author's email-->
+	
+		<div class="social-icons">
+		  <a href="https://wa.me/1234567890"><i class="fab fa-whatsapp"></i></a>
+		  <a href="https://twitter.com/yourusername"><i class="fab fa-twitter"></i></a>
+		  <a href="https://www.instagram.com/yourusername"><i class="fab fa-instagram"></i></a>
+		  <a href="mailto:yourname@gmail.com"><i class="far fa-envelope"></i></a>
+		  <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+		</div>
+
+		<div class="footer-legal-links">
+			<a href="https://www.oracle.com/legal/privacy/">Privacy</a> /
+			<a href="https://www.oracle.com/legal/privacy/privacy-choices.html">Do Not Sell My Info</a> |
+			<a href="https://www.oracle.com/us/legal/terms/index.html">Terms of Use</a> |
+			<a href="https://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a> |
+			<div id="teconsent"></div>
+		</div>
+	</div>
+
+</div>
+</footer>
+
+</body>
+</html>
